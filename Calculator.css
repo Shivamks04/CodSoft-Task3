@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(Media/Hogwarts.jpg);
+  }
+  .calculator {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    overflow: hidden;
+  }
+  
+  .display {
+    background: #272822;
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 2px solid #333;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+  
+  .btn {
+    background: #e0e0e0;
+    border: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .btn.operator {
+    background: #ff9800;
+    color: #fff;
+  }
+  
+  .btn.equal {
+    grid-column: span 4;
+    background: #4caf50;
+    color: #fff;
+  }
+  
+  .btn.clear {
+    background: #f44336;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
